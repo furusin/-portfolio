@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { render } from "@testing-library/react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Twitter />
+      <Github />
+      <Eight />
+    </div>
+  );
+}
+
+function Twitter() {
+  return (
+    <div>
+      <a href="https://twitter.com/furusin_oriver" target="_blank">
+        Twitter
+      </a>
+    </div>
+  );
+}
+
+function Github() {
+  return (
+    <div>
+      <a href="https://github.com/furusin" target="_blank">
+        Github
+      </a>
+    </div>
+  );
+}
+
+function Eight() {
+  return (
+    <div>
+      <a href="https://8card.net/p/39871470746" target="_blank">
+        Eight
+      </a>
     </div>
   );
 }
