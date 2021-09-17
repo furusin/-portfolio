@@ -1,11 +1,16 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Twitter from "./components/Twitter";
+import Github from "./components/Github";
+import Eight from "./components/Eight";
+
 import { render } from "@testing-library/react";
 
 function App() {
   return (
     <div>
+      <Header />
       <Twitter />
       <Github />
       <Eight />
@@ -13,32 +18,11 @@ function App() {
   );
 }
 
-function Twitter() {
+function Header() {
   return (
     <div>
-      <a href="https://twitter.com/furusin_oriver" target="_blank">
-        Twitter
-      </a>
-    </div>
-  );
-}
-
-function Github() {
-  return (
-    <div>
-      <a href="https://github.com/furusin" target="_blank">
-        Github
-      </a>
-    </div>
-  );
-}
-
-function Eight() {
-  return (
-    <div>
-      <a href="https://8card.net/p/39871470746" target="_blank">
-        Eight
-      </a>
+      <h1>Hello, World!</h1>
+      <h1>furusin's portfolio</h1>
     </div>
   );
 }
