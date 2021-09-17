@@ -1,28 +1,29 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
 import Twitter from "./components/Twitter";
 import Github from "./components/Github";
 import Eight from "./components/Eight";
-
-import { render } from "@testing-library/react";
+import {
+  AlertDialogOverlay,
+  ChakraProvider,
+  Flex,
+  Input,
+} from "@chakra-ui/react";
+import BriefInfo from "./components/BriefInfo";
+import Sns from "./components/Sns";
+import TechOutput from "./components/TechOutput";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Header />
-      <Twitter />
-      <Github />
-      <Eight />
-    </div>
-  );
-}
-
-function Header() {
-  return (
-    <div>
-      <h1>Hello, World!</h1>
-      <h1>furusin's portfolio</h1>
+      <BriefInfo />
+      <Sns />
+      <TechOutput />
+      <Footer />
     </div>
   );
 }
