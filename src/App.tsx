@@ -15,6 +15,7 @@ import BriefInfo from "./components/BriefInfo";
 import Sns from "./components/Sns";
 import TechOutput from "./components/TechOutput";
 import Footer from "./components/Footer";
+import Carrer from "./components/Carrer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <BriefInfo />
       <Sns />
       <TechOutput />
+      <Carrer />
       <Footer />
     </div>
   );
