@@ -10,6 +10,7 @@ import {
   ChakraProvider,
   Flex,
   Input,
+  Stack,
 } from "@chakra-ui/react";
 import BriefInfo from "./components/BriefInfo";
 import Sns from "./components/Sns";
@@ -19,14 +20,14 @@ import Carrer from "./components/Carrer";
 
 function App() {
   return (
-    <div>
+    <Stack align="center">
       <Header />
       <BriefInfo />
       <Sns />
       <TechOutput />
       <Carrer />
       <Footer />
-    </div>
+    </Stack>
   );
 }
 
